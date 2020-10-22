@@ -155,10 +155,8 @@ $(document).ready(function() {
                 } else {
                     txt = $("<h2></h2>").text("victoire de " + players[1].getName());
                     $('.add_player').prepend(txt);
-
-                    return true;
                 }
-
+                return true;
             }
             return false;
         }
