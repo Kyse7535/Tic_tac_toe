@@ -13,11 +13,18 @@ html {
 
 body {
     min-width: 350px;
+    background: #141E30;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 header h1 {
     padding: 2% 0;
     font-weight: 900;
+    color: #fff;
 }
 
 table {
@@ -44,7 +51,8 @@ table:first-child tr {
 }
 
 .add_player h5 {
-    font-weight: 400;
+    font-weight: 500;
+    color: rgb(243, 207, 207);
 }
 
 main {
@@ -62,10 +70,11 @@ main {
     margin: 1%;
 }
 
-h2 {
-    font-weight: 900;
+.add_player h2 {
+    font-weight: 800;
     color: #00C851;
-    font-size: 70px;
+    font-size: 52px;
+    letter-spacing: 2px;
 }
 
 button {

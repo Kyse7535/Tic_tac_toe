@@ -27,6 +27,11 @@ $(document).ready(function() {
                 Element.forEach((item, index2) => {
                     let td = document.createElement('td');
                     let p = document.createElement("p");
+                    if (item == "O") {
+                        p.style.cssText = "color:#2196f3;";
+                    } else {
+                        p.style.cssText = "color:#ffff8d;";
+                    }
                     p.textContent = item;
                     td.append(p);
                     td.setAttribute('id', `${index}${index2}`);
@@ -86,9 +91,9 @@ $(document).ready(function() {
             players.forEach((player, index) => {
                 let myPlayer = "";
                 if (index % 2 == 0) {
-                    myPlayer = $('<h5></h5>').text(player.getName() + ": [X]");
+                    myPlayer = $('<h5></h5>').text(player.getName() + " \t: [X]");
                 } else {
-                    myPlayer = $('<h5></h5>').text(player.getName() + ": [O]");
+                    myPlayer = $('<h5></h5>').text(player.getName() + " \t : [O]");
                 }
                 $(".add_player").prepend(myPlayer);
             });
