@@ -11,6 +11,10 @@ html {
     height: 100%;
 }
 
+body {
+    min-width: 350px;
+}
+
 header h1 {
     padding: 2% 0;
     font-weight: 900;
@@ -66,4 +70,18 @@ h2 {
 
 button {
     border: none;
+}
+
+@media (max-width: 767px) {
+    main {
+        text-align: center;
+    }
+    .player,
+    .start,
+    .restart {
+        display: block;
+        width: 40%;
+        margin: 2% auto;
+        font-weight: 2.5vw;
+    }
 }
